@@ -1,0 +1,70 @@
+.profile_wraper{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+.profile_image{
+    padding: 1.5rem;
+
+}
+/* .profile_image h1{
+    text-align: center;
+} */
+.profile_details{
+    padding: 1.5rem;
+    
+}
+.profile_personel_info{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+h2{
+    text-align: center;
+}
+
+.profile_personel_info li{
+    list-style: none;
+    line-height: 2;
+}
+.profile_personel_info li span{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.profile_title{
+    font-size: 20px;
+}
+.profile_type{
+    font-style: italic;
+    font-size: 16px;
+    margin-left: 1em;
+}
+.episodes_wraper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.episode_info{
+    width: 100px;
+    background-color: rgba(37, 199, 199, 0.83);
+    border-radius: 10px;
+    padding: 5px;
+}
+.episode_info{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .profile_wraper{
+        flex-direction: column;
+    }
+    .profile_image img{
+        width: 300px;
+        height: 300px;
+    }
+    .profile_personel_info {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,15 @@
+.episodeWraper{
+    margin-top: 5em;
+}
+.episodeWraper h1,p{
+text-align: center;
+}
+.card_wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .episodeWraper{
+        margin-top: 13em;
+    }
+}

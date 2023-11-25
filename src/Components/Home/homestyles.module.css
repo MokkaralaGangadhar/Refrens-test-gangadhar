@@ -1,0 +1,121 @@
+.char_card{
+    width: 340px;
+    height: fit-content;
+    border: 1px solid rgba(255, 238, 0, 0.712);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.char_card p{
+    word-wrap: break-word;
+}
+.char_card button{
+    background-color: rgba(50, 50, 229, 0.889);
+    color: azure;
+    outline: none;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.char_card button:hover{
+    background: rgb(21, 42, 1);
+}
+.char_card_container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.home_page_container{
+    display: flex;
+    margin-top: 5em;
+}
+.filter_container{
+    width: 25%;
+    border: 1px solid green;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px;
+   
+}
+.filter_container h1{
+    text-align: center;
+    color: rgb(43 245 8)
+}
+.filter_container h3{
+    text-align: center;
+    color: rgb(8 245 157);
+}
+
+@media (max-width: 768px) {
+    .char_card{
+        width: 150px;
+    }
+    .home_page_container{
+        flex-direction: column;
+
+    }
+    .filter_container{
+        display: none;
+    }
+    .char_card_container{
+        width: 100%;
+    }
+    .home_page_container{
+        margin-top: 13em;
+    }
+}
+select{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+.location_info_wraper{
+    max-height: 300px;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+    scrollbar-gutter: stable both-edges;
+}
+.location_info_wraper h3{
+    position: inherit;
+    z-index: 1;
+}
+.location_info_wraper {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.location_info_wraper::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.character_info {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: #1d4903;
+}
+button{
+    outline: none;
+    border: none;
+    padding: 7px;
+    color: white;
+    font-size: 16px;
+    font-style: oblique;
+    background: #44b403;
+    border-radius: 10px;
+}
+.flex_start{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
